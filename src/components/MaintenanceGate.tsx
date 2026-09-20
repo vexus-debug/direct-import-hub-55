@@ -16,8 +16,8 @@ export function MaintenancePage() {
         </div>
         <h1 className="mb-3 text-3xl font-bold tracking-tight">Under maintenance</h1>
         <p className="text-muted-foreground">
-          We're making some improvements to this page. It will be back online on{" "}
-          <span className="font-medium text-foreground">25 August</span>. Thanks for your patience.
+          We're making some improvements to this page. It will be back online soon.
+          Thanks for your patience.
         </p>
       </div>
     </main>

@@ -141,7 +141,7 @@ export function DashboardSidebar() {
         <AlertDialogHeader>
           <AlertDialogTitle>Marketing is under maintenance</AlertDialogTitle>
           <AlertDialogDescription>
-            We're making improvements to the marketing tools. They'll be back online on 25 August.
+            We're making improvements to the marketing tools. They'll be back online soon.
             Thanks for your patience.
           </AlertDialogDescription>
         </AlertDialogHeader>
