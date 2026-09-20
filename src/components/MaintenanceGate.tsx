@@ -1,10 +1,10 @@
 import { Wrench } from "lucide-react";
 
-/** Marketing pages stay in maintenance mode until this date (local time). */
-export const MAINTENANCE_UNTIL = new Date("2026-08-25T00:00:00");
+/** Marketing pages stay in maintenance mode while this flag is on. */
+export const MAINTENANCE_ENABLED = true;
 
-export function isUnderMaintenance(now: Date = new Date()) {
-  return now < MAINTENANCE_UNTIL;
+export function isUnderMaintenance(_now: Date = new Date()) {
+  return MAINTENANCE_ENABLED;
 }
 
 export function MaintenancePage() {
@@ -16,8 +16,8 @@ export function MaintenancePage() {
         </div>
         <h1 className="mb-3 text-3xl font-bold tracking-tight">Under maintenance</h1>
         <p className="text-muted-foreground">
-          We're making some improvements to this page. It will be back online on{" "}
-          <span className="font-medium text-foreground">25 August</span>. Thanks for your patience.
+          We're making some improvements to this page. It will be back online soon.
+          Thanks for your patience.
         </p>
       </div>
     </main>

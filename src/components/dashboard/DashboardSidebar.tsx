@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/sidebar";
 import { LogOut, Building2, Shield, ChevronRight, Lock } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
-import clinexusLogoRect from "@/assets/clinexus-logo-dashboard.png.asset.json";
+import clinexusLogoRect from "@/assets/clinexus-logo-dashboard.png";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useAuth } from "@/hooks/useAuth";
@@ -141,7 +141,7 @@ export function DashboardSidebar() {
         <AlertDialogHeader>
           <AlertDialogTitle>Marketing is under maintenance</AlertDialogTitle>
           <AlertDialogDescription>
-            We're making improvements to the marketing tools. They'll be back online on 25 August.
+            We're making improvements to the marketing tools. They'll be back online soon.
             Thanks for your patience.
           </AlertDialogDescription>
         </AlertDialogHeader>
@@ -161,9 +161,9 @@ export function DashboardSidebar() {
       <div className="flex items-center gap-3 px-4 py-[1.125rem] border-b border-white/8">
         <div className="relative shrink-0">
           <img
-            src={clinexusLogoRect.url}
+            src={clinexusLogoRect}
             alt="Clinexus"
-            className="h-7 w-auto object-contain mix-blend-screen"
+            className="h-7 w-auto object-contain"
           />
         </div>
         <AnimatePresence>
