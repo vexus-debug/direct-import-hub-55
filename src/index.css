@@ -618,13 +618,14 @@
   border-bottom: 1px solid hsl(var(--primary) / 0.14);
 }
 
-/* ── Public site editorial typography & surfaces ──
-   Serif display headings + tight sans body, hairline borders,
-   soft shadows. Scoped to the public marketing site only. */
+/* ── Public site typography & surfaces ──
+   Clean sans-serif headings for a clinical, trustworthy SaaS feel,
+   tight sans body, hairline borders, soft shadows. Scoped to the
+   public marketing site only. */
 .site-theme h1,
 .site-theme h2,
 .site-theme h3 {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
